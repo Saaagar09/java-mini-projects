@@ -7,6 +7,7 @@ A Java dice rolling simulator with ASCII dice graphics.
 - Random dice values
 - Total score calculation
 - ASCII dice display
+- Added highest roll tracking feature
 
 ## Concepts Used
 - Methods

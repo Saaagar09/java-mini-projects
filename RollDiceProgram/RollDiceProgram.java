@@ -9,7 +9,7 @@ public class RollDiceProgram {
         Scanner scanner = new Scanner(System.in);
 
         do {
-            int rollDice, totalDice = 0;
+            int rollDice, totalDice = 0, Highestroll = 0;
 
             System.out.print("Enter How Many Dices To roll: ");
             rollDice = scanner.nextInt();
@@ -19,9 +19,13 @@ public class RollDiceProgram {
                     int randomNum = random.nextInt(6) + 1;
                     printDice(randomNum);
                     System.out.println("You Rolled: " + randomNum);
+                    if (randomNum > Highestroll) {                   // Highest Roll Among different Dice Rolls Counter
+                        Highestroll = randomNum;
+                    }
                     totalDice += randomNum;
                 }
-                System.out.println("Total Point is: " + totalDice);
+                System.out.println("Highest Roll : " + Highestroll);
+                System.out.println("Total Point is : " + totalDice);
             } else {
                 System.out.println("Number should be greater than Zero!");
             }

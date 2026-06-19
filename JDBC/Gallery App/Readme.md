@@ -38,7 +38,6 @@ gallery-app/
 │
 ├── GalleryApp.java
 ├── README.md
-└── schema.sql (optional)
 
 
 --------------------------------------------
